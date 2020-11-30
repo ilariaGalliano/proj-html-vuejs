@@ -20,6 +20,16 @@ header{
 a{
   text-decoration: none;
 }
+h1,
+h2{
+  text-transform: capitalize;
+}
+span{
+  cursor: pointer;
+}
+li{
+  list-style: none;
+}
 
 /* Utilities */
 .dspy-flex{
@@ -88,7 +98,7 @@ button{
   font-size: 18px;
   background: #f8f9fc;
   padding: 10px;
-  margin-left: 4px;
+  margin-left: 40px;
 }
 .icons-list li .colored-icons{
   font-size: 16px;
@@ -96,6 +106,7 @@ button{
   background: #e4e9f8;
   border-radius: 5px;
   padding: 10px;
+  margin-left: 4px;
 }
 
 /* Header-top */
@@ -109,7 +120,6 @@ button{
   width: 70%;
   font-size: 40px;
   padding: 10px 0;
-  text-transform: capitalize;
   color: #161c2d;
 }
 .text-developer p{
@@ -139,10 +149,77 @@ button{
   margin-right: 30px;
   margin-top: 40px;
 }
+
 /* Header-bottom */
+.header-bottom{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-bottom img{
+  width: 90px;
+}
+
+/* Main */
+.main-content{
+  padding: 15px;
+}
+/* Section features - main */
+.features{
+  padding: 100px 0;
+}
+.features .p-features{
+  width: 60%;
+  margin: 30px 0;
+}
+.features p{
+  color: #8492a6;
+  font-size: 18px;
+  margin: 20px;
+}
+.features span{
+  font-weight: bold;
+  color: #2f55d4;
+}
+.features-container{
+  margin: 40px 0;
+}
+.list-features{
+  height: 320px;
+  border: 1px solid #8492a6;
+}
+.list-features:nth-child(2){
+  margin: 0 15px;
+}
+.list-features:nth-child(3){
+  margin-right: 15px;
+}
+.list-features i{
+  font-size: 24px;
+  color: #4265d8;
+  background: #e4e9f8;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+.list-features h5{
+  font-size: 20px;
+  margin: 20px;
+}
+.list-features a{
+  margin: 20px;
+  color: #4265d8;
+}
+
+/* Section documentation - main */
+
+/* Section rates - main */
+
+/* Section information - main */
 
 
-/*  */
+/* Footer */
 
+/* Footer-top */
 
-/*  */
+/* Footer-bottom */

@@ -30,5 +30,27 @@ const app = new Vue({
         family: 'fas'
       },
     ],
+
+    // Companies list
+    listCompanies: [
+      {
+        logoCompany: 'amazon',
+      },
+      {
+        logoCompany: 'google',
+      },
+      {
+        logoCompany: 'lenovo',
+      },
+      {
+        logoCompany: 'paypal',
+      },
+      {
+        logoCompany: 'shopify',
+      },
+      {
+        logoCompany: 'spotify',
+      },
+    ],
   },
 });
