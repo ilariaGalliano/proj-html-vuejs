@@ -1,0 +1,148 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 1140px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/* Layout */
+body {
+  font-family: "Nunito",sans-serif;
+}
+header{
+  background: #f8f9fc;
+}
+a{
+  text-decoration: none;
+}
+
+/* Utilities */
+.dspy-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Buttons */
+button{
+  cursor: pointer;
+}
+.btn-blue{
+  font-size: 18px;
+  color: #fff;
+  background-color: #2f55d4;
+  border-color: #2f55d4;
+  box-shadow: 0 3px 5px 0 rgba(47, 85, 212, 0.3);
+  padding: 8px 20px;
+  border-radius: 6px;
+  outline: none;
+}
+.btn-transparent{
+  font-size: 18px;
+  background: #f8f9fc;
+  color: #2f55d4;
+  border-color: #2f55d4;
+  box-shadow: 0 3px 5px 0 rgba(47, 85, 212, 0.3);
+  padding: 8px 20px;
+  border-radius: 6px;
+  outline: none;
+  margin-left: 10px;
+}
+
+/* Header */
+/* Navbar */
+.nav-bar {
+  padding: 20px;
+  margin-bottom: 60px;
+}
+.logo-dark,
+.icons-list{
+  flex-basis: 30%;
+}
+.menu-list{
+  flex-basis: 40%;
+}
+.logo-dark img{
+  max-width: 160px;
+}
+.menu-list li,
+.icons-list li{
+  list-style: none;
+  padding: 0 15px;
+}
+.menu-list a{
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3c4858;
+}
+.menu-list a:hover{
+  color: #4265d8;
+  transition: color 0.4s;
+}
+.icons-list li i{
+  font-size: 18px;
+  background: #f8f9fc;
+  padding: 10px;
+  margin-left: 4px;
+}
+.icons-list li .colored-icons{
+  font-size: 16px;
+  color: #4265d8;
+  background: #e4e9f8;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Header-top */
+.header-top{
+  margin-bottom: 90px;
+}
+.text-developer{
+  margin: 30px;
+}
+.text-developer h1{
+  width: 70%;
+  font-size: 40px;
+  padding: 10px 0;
+  text-transform: capitalize;
+  color: #161c2d;
+}
+.text-developer p{
+  color: #8492a6;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+.text-developer button{
+  margin: 20px 10px 30px 0;
+}
+.text-developer .development{
+  display: inline-block;
+  width: 110px;
+  font-size: 12px;
+  border-radius: 25px;
+  border: 1px solid #2f55d4;
+  color: #2f55d4;
+  background: #e4e9f8;
+  padding: 5px 5px;
+  text-align: center;
+}
+.text-developer .version{
+  color: #8492a6;
+}
+.img-developer{
+  padding-left: 30px;
+  margin-right: 30px;
+  margin-top: 40px;
+}
+/* Header-bottom */
+
+
+/*  */
+
+
+/*  */

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landrick</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!-- Font-family -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+  <!-- Container -->
+  <div id="app" class="container">
+    <!-- Header -->
+    <header class="">
+      <!-- Navbar -->
+      <nav class="nav-bar dspy-flex">
+        <div class="logo-dark">
+          <img src="./img/logo-dark.png" alt="logo-dark">
+        </div>
+        <div class="menu-list dspy-flex">
+          <ul v-for="list in listMenu">
+            <!-- fix icons (vue) -->
+            <li>
+              <a href="#">{{list.text}}</a>
+             <i class="${family} ${prefix}${name}"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="icons-list">
+          <ul class="dspy-flex">
+            <li>
+              <i class="fas fa-search"></i>
+              <i class="fab fa-github colored-icons"></i>
+              <i class="fab fa-stack-overflow colored-icons"></i>
+              <i class="far fa-user colored-icons"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Header-top -->
+      <div class="header-top dspy-flex">
+        <div class="text-developer">
+          <span class="development">Development</span>
+          <h1>A complete developer toolset</h1>
+          <p>Launch your campaign and benefit from our expertise
+             on designing and managing conversion centered
+             bootstrap4 html page.</p>
+          <button class="btn-blue" type="button" name="button">Get Started</button>
+          <button class="btn-transparent"type="button" name="button">Documentation</button>
+          <div class="version">
+            <span>Current Version: v2.6.0</span>
+          </div>
+        </div>
+        <div class="img-developer">
+          <img src="./img/about.png" alt="">
+        </div>
+      </div>
+      <!-- Header-bottom -->
+      <div class="header-bottom">
+
+      </div>
+    </header>
+
+
+
+
+
+  </div>
+
+
+
+
+    <!-- Js -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
