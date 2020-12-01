@@ -30,7 +30,7 @@
             <!-- fix icons (vue) -->
             <li>
               <a href="#">{{list.text}}</a>
-             <i class="${family} ${prefix}${name}"></i>
+              <i class="${family} ${prefix}${name}"></i>
             </li>
           </ul>
         </div>
@@ -69,16 +69,17 @@
           <li>
             <img class="companies-logo"
                    :src="`./img/${company.logoCompany}.svg`"
-                   :alt="company.logoCompany">
+                   :alt="company.logoCompany"
+            >
           </li>
         </ul>
       </div>
      </div>
     </header>
 
-
     <!-- Main -->
     <main class="main-content container">
+
       <!-- Section features -->
       <section class="features">
         <h2 class="capitalize">Key features</h2>
@@ -125,6 +126,7 @@
             <p class="p-features2 text-align">Start working with <span class="landrick">Landrick</span> that can provide everything
                you need to generate awareness, drive traffic, connect.</p>
           </div>
+
           <!-- Black box -->
           <div class="black-box">
             <ul class="white-list">
@@ -145,11 +147,12 @@
             <span>Work with any team</span>
           </div>
 
-
         </div>
       </section>
+
       <!-- Section documentation -->
       <section class="documentation">
+
         <!-- Documentation-left -->
         <div class="documentation-left">
           <h2>Build tools and <br> extensive documentation</h2>
@@ -177,15 +180,19 @@
           <img src="./img/1.png" alt="">
         </div>
       </section>
+
       <!-- Section rates -->
       <section class="rates">
+
         <!-- General rates -->
         <h2 class="text-align">Our rates for developer from landrick team</h2>
         <div class="dspy-flex">
           <p class="text-align p-title gray">Start working with <span class="landrick">Landrick</span> that can provide everything
-             you need to generate awareness, drive traffic, connect.</p>
+             you need to generate awareness, drive traffic, connect.
+          </p>
         </div>
         <div class="dspy-flex rates-container">
+
           <!-- List-rates 1 -->
           <div class="list-rates">
             <span class="plan-option">Basic</span>
@@ -193,6 +200,7 @@
             <span class="gray month">Per Month</span>
             <p class="gray border-btm p-info">All the basis for businesses that are just getting started</p>
 
+            <!-- List check -->
             <ul>
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
@@ -226,6 +234,7 @@
             <span class="gray month">Per Month</span>
             <p class="gray border-btm p-info">Better for growing businesses that want more customers</p>
 
+            <!-- List check -->
             <ul>
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
@@ -259,6 +268,7 @@
             <span class="gray month">Per Month</span>
             <p class="gray border-btm p-info">Advanced features for pros who need more customization</p>
 
+            <!-- List check -->
             <ul>
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
@@ -287,6 +297,7 @@
 
         </div>
       </section>
+
       <!-- Section information -->
       <section class="information">
         <h2 class="text-align">Want to be among the first to find out?</h2>
@@ -296,6 +307,7 @@
              you need to generate awareness, drive traffic, connect.
           </p>
         </div>
+
         <!-- Input information -->
         <div class="dspy-flex relative">
           <input class="input-info"type="text" name="" value="" placeholder="Email Address">
@@ -307,26 +319,77 @@
     <!-- Footer -->
     <footer>
      <div class="container">
+
         <!-- Footer-top -->
         <div class="footer-top">
-
+          <div class="first-column logo-light">
+            <img src="./img/logo-light.png" alt="">
+            <p class="text-footer p-footer">Start working with Landrick that
+               can provide everything you need to generate awareness,
+               drive traffic, connect.</p>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fab fa-facebook-f text-footer"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-instagram text-footer"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter text-footer"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-linkedin-in text-footer"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="second-column text-footer">
+            <h3>Company</h3>
+            <ul class="margin-external" v-for="list2 in listFooter2">
+              <li>{{ list2.listCompany }}</li>
+            </ul>
+          </div>
+          <div class="third-column text-footer">
+            <h3 class="capitalize">Usefull links</h3>
+            <ul class="margin-external" v-for="list3 in listFooter3">
+              <li>{{ list3.listCompany }}</li>
+            </ul>
+          </div>
+          <div class="fourth-column text-footer">
+            <h3>Newsletter</h3>
+            <p class="p-footer">Sign up and receive the latest tips via email.</p>
+            <span>Write your email <small>*</small></span>
+            <input class="text-footer" type="text" name="" value="" placeholder="Your email:">
+            <i class="far fa-envelope mail-icon"></i>
+            <button class="btn-footer" type="button" name="button">Subscribe</button>
+          </div>
         </div>
+
         <!-- Footer-bottom -->
         <div class="footer-bottom">
-
+          <p class="text-footer">© 2020 Landrick. Design with by Shreethemes.</p>
+          <div class="list-card">
+            <ul v-for="payment in listPayments">
+              <li>
+                <img class="payments-logo"
+                       :src="`./img/${payment.card}.png`"
+                       :alt="payment.card"
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-
 
      </div>
     </footer>
-
-
-
-
-
   </div>
-
-
 
 
     <!-- Js -->

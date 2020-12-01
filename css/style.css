@@ -63,6 +63,7 @@ li{
 .relative{
   position: relative;
 }
+
 /* Buttons */
 button{
   cursor: pointer;
@@ -112,6 +113,18 @@ button{
   margin: 20px 20px;
   position: absolute;
   right: 27%;
+}
+.btn-footer{
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  color: #2f55d4;
+  background-color: #212d51;
+  border: 1px solid rgba(47, 85, 212, 0.1);
+  box-shadow: 0 3px 5px 0 rgba(47, 85, 212, 0.3);
+  padding: 8px 20px;
+  border-radius: 6px;
+  outline: none;
 }
 
 /* Header */
@@ -403,7 +416,117 @@ button{
 footer{
   background: #202942;
   height: 500px;
+  padding: 20px;
 }
+
 /* Footer-top */
+.footer-top {
+  display: flex;
+  justify-content: center;
+}
+.footer-top .logo-light img{
+  width: 160px;
+}
+
+/* Common style gneral columns */
+.footer-top h3{
+  color:#fff;
+}
+.text-footer{
+  color: #adb5bd;
+}
+.footer-top .p-footer{
+  margin: 20px 0;
+}
+.second-column,
+.third-column,
+.fourth-column{
+  width: 22%;
+}
+.first-column,
+.second-column,
+.third-column {
+  margin-right: 25px;
+}
+.second-column h3,
+.third-column h3,
+.fourth-column h3{
+  margin-bottom: 20px;
+}
+.second-column ul li,
+.third-column ul li{
+  padding-bottom: 10px;
+}
+
+/* First column */
+.first-column{
+  width: 28%;
+}
+.first-column ul{
+  display: flex;
+  justify-content: flex-start;
+}
+.first-column ul a{
+  border: 1px solid #fff;
+  text-align: center;
+  border-radius: 6px;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-column ul li{
+  margin-right: 10px;
+}
+.first-column i{
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Second column */
+
+/* third column */
+
+/* Fourth column */
+.fourth-column small{
+  color: red;
+}
+.fourth-column input{
+  display: flex;
+  position: relative;
+  width: 200px;
+  height: 40px;
+  background: #27314f;
+  border: 0;
+  padding-left: 35px;
+  margin: 20px 0;
+}
+.fourth-column .mail-icon{
+  margin-top: -48px;
+  position: absolute;
+  right: 25%;
+}
 
 /* Footer-bottom */
+.footer-bottom {
+  display: flex;
+  align-items: center;
+}
+.footer-bottom p{
+  width: 80%;
+  margin-top: 50px;
+}
+.footer-bottom li{
+  padding-right: 10px;
+}
+.footer-bottom .list-card{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 50px;
+}
+.footer-bottom img{
+  width: 50px;
+}

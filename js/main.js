@@ -52,5 +52,70 @@ const app = new Vue({
         logoCompany: 'spotify',
       },
     ],
+
+    // Footer
+    listFooter2: [
+      {
+        listCompany: 'About us',
+      },
+      {
+        listCompany: 'Sevices',
+      },
+      {
+        listCompany: 'Team',
+      },
+      {
+        listCompany: 'Pricing',
+      },
+      {
+        listCompany: 'Project',
+      },
+      {
+        listCompany: 'Careers',
+      },
+      {
+        listCompany: 'Blog',
+      },
+      {
+        listCompany: 'Login',
+      },
+    ],
+    listFooter3: [
+      {
+        listCompany: 'Terms of Sevices',
+      },
+      {
+        listCompany: 'Privacy Policy',
+      },
+      {
+        listCompany: 'Documentation',
+      },
+      {
+        listCompany: 'Changelog',
+      },
+      {
+        listCompany: 'Components',
+      },
+    ],
+
+    // Payments
+    listPayments: [
+      {
+        card: 'american-ex',
+      },
+      {
+        card: 'discover',
+      },
+      {
+        card: 'master-card',
+      },
+      {
+        card: 'paypal',
+      },
+      {
+        card: 'visa',
+      },
+    ],
+
   },
 });
