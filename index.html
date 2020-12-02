@@ -27,20 +27,20 @@
         </div>
         <div class="menu-list dspy-flex">
           <ul v-for="list in listMenu">
-            <!-- fix icons (vue) -->
             <li>
-              <a href="#">{{list.text}}</a>
-              <i class="${family} ${prefix}${name}"></i>
+              <a href="#">{{list.text}}
+                <i :class="`${list.family} ${list.nameIcon}`"></i>
+              </a>
             </li>
           </ul>
         </div>
         <div class="icons-list">
-          <ul>
-            <li>
-              <i class="fas fa-search"></i>
-              <i class="fab fa-github colored-icons"></i>
-              <i class="fab fa-stack-overflow colored-icons"></i>
-              <i class="far fa-user colored-icons"></i>
+          <ul class="icons-list-i">
+            <li v-for="iconNavGray in iconsNavGray">
+              <i class="gray" :class="`${iconNavGray.family} ${iconNavGray.nameIcon}`"></i>
+            </li>
+            <li v-for="iconNav in iconsNav">
+              <i class="colored-icons" :class="`${iconNav.family} ${iconNav.nameIcon}`"></i>
             </li>
           </ul>
         </div>
@@ -63,17 +63,23 @@
           <img src="./img/about.png" alt="">
         </div>
       </div>
-      <!-- Header-bottom -->
-      <div class="header-bottom dspy-flex">
-        <ul v-for="company in listCompanies">
-          <li>
-            <img class="companies-logo"
-                   :src="`./img/${company.logoCompany}.svg`"
-                   :alt="company.logoCompany"
-            >
-          </li>
-        </ul>
-      </div>
+     </div>
+
+     <!-- Section border-top -->
+     <section class="border-top-h"></section>
+
+     <div class="container">
+        <!-- Header-bottom -->
+        <div class="header-bottom dspy-flex">
+          <ul v-for="company in listCompanies">
+            <li>
+              <img class="companies-logo"
+                     :src="`./img/${company.logoCompany}.svg`"
+                     :alt="company.logoCompany"
+              >
+            </li>
+          </ul>
+        </div>
      </div>
     </header>
 
@@ -130,7 +136,7 @@
           <!-- Black box -->
           <div class="black-box">
             <ul class="white-list">
-              <li>npm</li>
+              <li><span>npm</span></li>
               <li>nuget</li>
               <li>spm</li>
               <li>github</li>
@@ -229,6 +235,7 @@
 
           <!-- List-rates 2 -->
           <div class="list-rates">
+            <span class="best text-align">Best</span>
             <span class="plan-option">Business</span>
             <h2 class="margin-external">$39.00</h2>
             <span class="gray month">Per Month</span>
@@ -322,46 +329,41 @@
 
         <!-- Footer-top -->
         <div class="footer-top">
+          <!-- First column -->
           <div class="first-column logo-light">
             <img src="./img/logo-light.png" alt="">
             <p class="text-footer p-footer">Start working with Landrick that
                can provide everything you need to generate awareness,
                drive traffic, connect.</p>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fab fa-facebook-f text-footer"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-instagram text-footer"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-twitter text-footer"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fab fa-linkedin-in text-footer"></i>
-                </a>
-              </li>
-            </ul>
+             <ul>
+               <li v-for="social in listSocial">
+                 <a href="#">
+                   <i class="text-footer" :class="`${social.family} ${social.nameSocial}`"></i>
+                 </a>
+               </li>
+             </ul>
           </div>
+          <!-- Second column -->
           <div class="second-column text-footer">
             <h3>Company</h3>
-            <ul class="margin-external" v-for="list2 in listFooter2">
-              <li>{{ list2.listCompany }}</li>
+            <ul v-for="list2 in listFooter2">
+              <li>
+                <i :class="`${list2.family} ${list2.nameIcon}`"></i>
+                {{ list2.listCompany }}
+              </li>
             </ul>
           </div>
+          <!-- Third column -->
           <div class="third-column text-footer">
             <h3 class="capitalize">Usefull links</h3>
-            <ul class="margin-external" v-for="list3 in listFooter3">
-              <li>{{ list3.listCompany }}</li>
+            <ul v-for="list3 in listFooter3">
+              <li>
+                <i :class="`${list3.family} ${list3.nameIcon}`"></i>
+                {{ list3.listCompany }}
+              </li>
             </ul>
           </div>
+          <!-- Fourth column -->
           <div class="fourth-column text-footer">
             <h3>Newsletter</h3>
             <p class="p-footer">Sign up and receive the latest tips via email.</p>
@@ -371,10 +373,15 @@
             <button class="btn-footer" type="button" name="button">Subscribe</button>
           </div>
         </div>
+     </div>
+     
+      <!-- Section border-top -->
+      <section class="border-top-f"></section>
 
+      <div class="container">
         <!-- Footer-bottom -->
         <div class="footer-bottom">
-          <p class="text-footer">© 2020 Landrick. Design with by Shreethemes.</p>
+          <p class="text-footer">© 2020 Landrick. Design with <small>&hearts;</small> by Shreethemes.</p>
           <div class="list-card">
             <ul v-for="payment in listPayments">
               <li>
@@ -386,8 +393,9 @@
             </ul>
           </div>
         </div>
+       </div>
 
-     </div>
+
     </footer>
   </div>
 

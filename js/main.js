@@ -6,32 +6,53 @@ const app = new Vue({
   el: '#app',
   data: {
 
-    // Menu list
+    // Menu list Navbar
     listMenu: [
       {
         text: 'home',
       },
       {
         text: 'landing',
-        prefix: 'fa-',
-        type: 'chevron-down',
+        nameIcon: 'fa-chevron-down',
         family: 'fas',
       },
       {
         text: 'pages',
-        prefix: 'fa-',
-        type: 'chevron-down',
+        nameIcon: 'fa-chevron-down',
         family: 'fas',
       },
       {
         text: 'docs',
-        prefix: 'fa-',
-        type: 'chevron-down',
-        family: 'fas'
+        nameIcon: 'fa-chevron-down',
+        family: 'fas',
       },
     ],
 
-    // Companies list
+    // Icon Navbar colored
+    iconsNav: [
+      {
+        nameIcon: 'fa-github',
+        family: 'fab',
+      },
+      {
+        nameIcon: 'fa-stack-overflow',
+        family: 'fab',
+      },
+      {
+        nameIcon: 'fa-user',
+        family: 'far',
+      },
+    ],
+
+    // Icon Navbar gray
+    iconsNavGray: [
+      {
+        nameIcon: 'fa-search',
+        family: 'fas',
+      }
+    ],
+
+    // Companies list Header
     listCompanies: [
       {
         logoCompany: 'amazon',
@@ -53,52 +74,100 @@ const app = new Vue({
       },
     ],
 
-    // Footer
-    listFooter2: [
+    // Footer column 1 social-list
+    listSocial: [
       {
-        listCompany: 'About us',
+        nameSocial: 'fa-facebook-f',
+        family: 'fab',
       },
       {
-        listCompany: 'Sevices',
+        nameSocial: 'fa-instagram',
+        family: 'fab',
       },
       {
-        listCompany: 'Team',
+        nameSocial: 'fa-twitter',
+        family: 'fab',
       },
       {
-        listCompany: 'Pricing',
-      },
-      {
-        listCompany: 'Project',
-      },
-      {
-        listCompany: 'Careers',
-      },
-      {
-        listCompany: 'Blog',
-      },
-      {
-        listCompany: 'Login',
-      },
-    ],
-    listFooter3: [
-      {
-        listCompany: 'Terms of Sevices',
-      },
-      {
-        listCompany: 'Privacy Policy',
-      },
-      {
-        listCompany: 'Documentation',
-      },
-      {
-        listCompany: 'Changelog',
-      },
-      {
-        listCompany: 'Components',
+        nameSocial: 'fa-linkedin-in',
+        family: 'fab',
       },
     ],
 
-    // Payments
+    // Footer column 2 list
+    listFooter2: [
+      {
+        listCompany: 'About us',
+        nameIcon: 'fa-chevron-right',
+        family: 'fas',
+      },
+      {
+        listCompany: 'Sevices',
+        nameIcon: 'fa-chevron-right',
+        family: 'fas',
+      },
+      {
+        listCompany: 'Team',
+        nameIcon: 'fa-chevron-right',
+        family: 'fas',
+      },
+      {
+        listCompany: 'Pricing',
+        nameIcon: 'fa-chevron-right',
+        family: 'fas',
+      },
+      {
+        listCompany: 'Project',
+        nameIcon: 'fa-chevron-right',
+        family: 'fas',
+      },
+      {
+        listCompany: 'Careers',
+        nameIcon: 'fa-chevron-right',
+        family: 'fas',
+      },
+      {
+        listCompany: 'Blog',
+        nameIcon: 'fa-chevron-right',
+        family: 'fas',
+      },
+      {
+        listCompany: 'Login',
+        nameIcon: 'fa-chevron-right',
+        family: 'fas',
+      },
+    ],
+
+    // footer column 3 list
+    listFooter3: [
+      {
+        listCompany: 'Terms of Sevices',
+        nameIcon: 'fa-chevron-right',
+        family: 'fas',
+      },
+      {
+        listCompany: 'Privacy Policy',
+        nameIcon: 'fa-chevron-right',
+        family: 'fas',
+      },
+      {
+        listCompany: 'Documentation',
+        nameIcon: 'fa-chevron-right',
+        family: 'fas',
+      },
+      {
+        listCompany: 'Changelog',
+        nameIcon: 'fa-chevron-right',
+        family: 'fas',
+      },
+      {
+        listCompany: 'Components',
+        nameIcon: 'fa-chevron-right',
+        family: 'fas',
+      },
+    ],
+
+    // Payments footer bottom
     listPayments: [
       {
         card: 'american-ex',
