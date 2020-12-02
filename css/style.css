@@ -15,6 +15,9 @@ body {
 }
 header{
   background: #f8f9fc;
+  height: 890px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 a{
   text-decoration: none;
@@ -68,7 +71,7 @@ li{
   margin-bottom: 50px;
 }
 .border-top-f{
-  border-top: 0.1px solid #e9ecef;
+  border-top: 0.1px solid #e9ecef24;
   margin-top: 30px;
 }
 
@@ -537,6 +540,12 @@ footer{
   justify-content: center;
   align-items: center;
 }
+.first-column ul a:hover{
+  background: #2f55d4;
+  border: #2f55d4;
+  color: #fff;
+  transition: 0.4s;
+}
 .first-column ul li{
   margin-right: 10px;
 }
@@ -574,6 +583,7 @@ footer{
 .footer-bottom {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .footer-bottom p{
   width: 80%;
@@ -590,4 +600,28 @@ footer{
 }
 .footer-bottom img{
   width: 50px;
+}
+
+/* Tooltip */
+.tooltip{
+  width: 50px;
+  height: 50px;
+  background: #2f55d4;
+  position: absolute;
+  right: -15%;
+  bottom: 1%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.tooltip i{
+  font-size: 20px;
+}
+.tooltip:hover{
+  background-color: #2443ac;
+  border-color: #2443ac;
+  color: #fff;
+  transition: 0.4s;
 }
