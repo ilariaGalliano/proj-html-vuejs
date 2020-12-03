@@ -1,6 +1,6 @@
-/*************
+/**************
  * Landrick Vue
- *************/
+ **************/
 
 const app = new Vue({
   el: '#app',
@@ -185,6 +185,20 @@ const app = new Vue({
         card: 'visa',
       },
     ],
+    active: false,
+    input: '',
+  },
+
+  methods:{
+
+    // To show input search
+    searchClick() {
+      this.active = !this.active
+    },
+    cleanInput(){
+      this.input = ''
+    }
+
   }
 
 

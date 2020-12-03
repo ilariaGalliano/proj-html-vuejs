@@ -25,6 +25,7 @@
         <div class="logo-dark">
           <img src="./img/logo-dark.png" alt="logo-dark">
         </div>
+
         <div class="menu-list dspy-flex">
           <ul v-for="list in listMenu">
             <li>
@@ -34,10 +35,17 @@
             </li>
           </ul>
         </div>
+
         <div class="icons-list">
           <ul class="icons-list-i">
             <li v-for="iconNavGray in iconsNavGray">
-              <i class="gray" :class="`${iconNavGray.family} ${iconNavGray.nameIcon}`"></i>
+              <!-- Search input -->
+              <a href="#" @click="searchClick">
+                <i class="gray relative" :class="`${iconNavGray.family} ${iconNavGray.nameIcon}`"></i>
+              </a>
+              <input v-if="active" v-model="input" @keyup.enter="cleanInput"
+                    class="dropdown-input" type="text" name="" value="" placeholder="Search"
+              >
             </li>
             <li v-for="iconNav in iconsNav">
               <i class="colored-icons" :class="`${iconNav.family} ${iconNav.nameIcon}`"></i>
@@ -45,6 +53,7 @@
           </ul>
         </div>
       </nav>
+
       <!-- Header-top -->
       <div class="header-top dspy-flex">
         <div class="text-developer">
@@ -91,7 +100,9 @@
         <h2 class="capitalize">Key features</h2>
         <p class="p-features">Start working with <span class="landrick">Landrick</span> that can provide everything
            you need to generate awareness, drive traffic, connect.</p>
+
         <div class="dspy-flex features-container">
+
           <ul class="list-features">
             <li>
               <i class="fas fa-layer-group"></i>
@@ -100,6 +111,7 @@
               <a href="#">Read More > </a>
             </li>
           </ul>
+
           <ul class="list-features">
             <li>
               <i class="fas fa-desktop"></i>
@@ -108,6 +120,7 @@
               <a href="#">Read More > </a>
             </li>
           </ul>
+
           <ul class="list-features">
             <li>
               <i class="fas fa-th-large"></i>
@@ -116,6 +129,7 @@
               <a href="#">Read More > </a>
             </li>
           </ul>
+
           <ul class="list-features">
             <li>
               <i class="fas fa-expand-arrows-alt"></i>
@@ -125,12 +139,15 @@
             </li>
           </ul>
         </div>
+
         <div class="quickstart">
           <span class="dspy-flex landrick">Quickstart</span>
           <h2 class="awesome text-align capitalize">awesome isn't it? let's dive in!</h2>
           <div class="dspy-flex">
-            <p class="p-features2 text-align">Start working with <span class="landrick">Landrick</span> that can provide everything
-               you need to generate awareness, drive traffic, connect.</p>
+            <p class="p-features2 text-align">Start working with <span class="landrick">Landrick</span>
+                                              that can provide everything
+                                              you need to generate awareness, drive traffic, connect.
+            </p>
           </div>
 
           <!-- Black box -->
@@ -146,6 +163,7 @@
               <span><small class="green">-g</small> claps.js</span>
             </div>
           </div>
+
           <div class="organize-work-check text-align">
             <i class="far fa-check-circle green"></i>
             <span>Organize your data</span>
@@ -178,7 +196,10 @@
               <span class="gray capitalize">Create you own skin to match your brand</span>
             </li>
           </ul>
-          <button class="btn-blue read-btn" type="button" name="button">Read More <i class="fas fa-arrow-right"></i></button>
+          <button class="btn-blue read-btn" type="button" name="button">
+              Read More
+              <i class="fas fa-arrow-right"></i>
+          </button>
         </div>
 
         <!-- Documentation-right -->
@@ -193,10 +214,12 @@
         <!-- General rates -->
         <h2 class="text-align">Our rates for developer from landrick team</h2>
         <div class="dspy-flex">
-          <p class="text-align p-title gray">Start working with <span class="landrick">Landrick</span> that can provide everything
-             you need to generate awareness, drive traffic, connect.
+          <p class="text-align p-title gray">Start working with <span class="landrick">Landrick</span> that can
+                                             provide everything
+                                             you need to generate awareness, drive traffic, connect.
           </p>
         </div>
+
         <div class="dspy-flex rates-container">
 
           <!-- List-rates 1 -->
@@ -212,23 +235,28 @@
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
+
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
+
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
+
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
+
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
             </ul>
+
             <button class="btn-large margin-external" type="button" name="button">Buy Now</button>
             <span class="margin-external gray">*No credit card required</span>
           </div>
@@ -240,7 +268,7 @@
             <span class="triangle-topleft"></span>
             <span class="best text-align">Best</span>
             <span class="triangle-bottomright"></span>
-            
+
             <!-- Info list -->
             <span class="plan-option">Business</span>
             <h2 class="margin-external">$39.00</h2>
@@ -253,23 +281,28 @@
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
+
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
+
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
+
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
+
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
             </ul>
+
             <button class="btn-large margin-external" type="button" name="button">Buy Now</button>
             <span class="margin-external gray">*No credit card required</span>
           </div>
@@ -287,23 +320,28 @@
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
+
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
+
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
+
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
+
               <li class="margin-external padding-top-bottom">
                 <i class="far fa-check-circle"></i>
                 <span class="gray capitalize">full access</span>
               </li>
             </ul>
+
             <button class="btn-large margin-external" type="button" name="button">Buy Now</button>
             <span class="margin-external gray">*No credit card required</span>
           </div>
@@ -340,7 +378,9 @@
             <img src="./img/logo-light.png" alt="">
             <p class="text-footer p-footer">Start working with Landrick that
                can provide everything you need to generate awareness,
-               drive traffic, connect.</p>
+               drive traffic, connect.
+            </p>
+
              <ul>
                <li v-for="social in listSocial">
                  <a href="#">
@@ -349,6 +389,7 @@
                </li>
              </ul>
           </div>
+
           <!-- Second column -->
           <div class="second-column text-footer">
             <h3>Company</h3>
@@ -359,6 +400,7 @@
               </li>
             </ul>
           </div>
+
           <!-- Third column -->
           <div class="third-column text-footer">
             <h3 class="capitalize">Usefull links</h3>
@@ -369,6 +411,7 @@
               </li>
             </ul>
           </div>
+          
           <!-- Fourth column -->
           <div class="fourth-column text-footer">
             <h3>Newsletter</h3>

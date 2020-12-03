@@ -218,6 +218,24 @@ button{
   transition: 0.4s;
 }
 
+/* Navbar effect search dropdown */
+.icons-list-i .dropdown-input{
+  position: absolute;
+  top: 8%;
+  right: 20%;
+  width: 200px;
+  padding: 10px 14px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 0 3px rgba(60,72,88,0.15);
+  outline: none;
+  transition: .4s;
+}
+.icons-list-i .dropdown-input:focus{
+  border: 1px solid #4265d8;
+}
+
 /* Header-top */
 .header-top{
   margin-bottom: 90px;
@@ -270,7 +288,7 @@ button{
 .main-content{
   padding: 15px;
 }
-/* Section features - main */
+/* Main - Section features */
 .features{
   padding: 100px 0;
 }
@@ -375,7 +393,7 @@ button{
   padding-left: 15px;
 }
 
-/* Section documentation - main */
+/* Main - Section documentation */
 .documentation{
   display: flex;
 }
@@ -405,7 +423,7 @@ button{
   width: 500px;
 }
 
-/* Section rates - main */
+/* Main - Section rates */
 .rates{
   margin-top: 80px;
 }
@@ -480,7 +498,7 @@ button{
   margin: 20px;
 }
 
-/* Section information - main */
+/* Main - Section information */
 .information {
   margin-bottom: 100px;
 }
@@ -514,7 +532,7 @@ footer{
   width: 140px;
 }
 
-/* Common style gneral columns */
+/* Footer - Common style general columns */
 .footer-top h3{
   color:#fff;
 }
