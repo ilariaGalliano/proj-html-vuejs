@@ -334,17 +334,28 @@ button{
   flex-wrap: wrap;
 }
 .black-box .white-list{
-  width: 660px;
+  width: 669px;
   height: 50px;
   font-size: 20px;
   color: #fff;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   background: #4f5a69;
   margin: 20px auto 10px;
   border-radius: 5px;
   border: 0.2px solid #e9ecef;
+}
+.black-box .white-list li{
+  padding: 0 60px;
+}
+.black-box .white-list li:hover{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3c4858;
+  border-radius: 5px;
+  width: 185px;
+  height: 45px;
 }
 .install-black-box span:nth-child(1){
   margin-left: 32px;
@@ -419,14 +430,30 @@ button{
 }
 .list-rates .best{
   position: absolute;
-  top: 2%;
-  right: 0%;
-  width: 48px;
+  top: 5%;
+  right: -1%;
+  width: 101px;
   color: #fff;
   background-color: #f17425;
   border-radius: 5px;
   border-color: #f7961c;
-  transform: rotate(32deg);
+  transform: rotate(38deg);
+}
+.triangle-topleft {
+  border-top: 16px solid #f17425;
+  border-right: 16px solid transparent;
+  position: absolute;
+  right: 23%;
+  top: 0%;
+  transform: rotate(-7deg);
+}
+.triangle-bottomright {
+  border-bottom: 16px solid #f17425;
+  border-left: 16px solid transparent;
+  position: absolute;
+  right: 0%;
+  top: 11%;
+  transform: rotate(-13deg);
 }
 .list-rates h2{
   font-size: 30px;
@@ -515,6 +542,7 @@ footer{
 .second-column ul li,
 .third-column ul li{
   padding-bottom: 10px;
+  cursor: pointer;
 }
 .second-column i,
 .third-column i{
@@ -554,10 +582,6 @@ footer{
   padding: 10px;
 }
 
-/* Second column */
-
-/* third column */
-
 /* Fourth column */
 .fourth-column small,
 .footer-bottom small{
@@ -575,8 +599,8 @@ footer{
 }
 .fourth-column .mail-icon{
   margin-top: -48px;
+  margin-left: 10px;
   position: absolute;
-  right: 31%;
 }
 
 /* Footer-bottom */
@@ -604,11 +628,11 @@ footer{
 
 /* Tooltip */
 .tooltip{
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   background: #2f55d4;
   position: absolute;
-  right: -15%;
+  right: -8%;
   bottom: 1%;
   border-radius: 5px;
   display: flex;
