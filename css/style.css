@@ -450,7 +450,7 @@ button{
   position: absolute;
   top: 5%;
   right: -1%;
-  width: 101px;
+  width: 102px;
   color: #fff;
   background-color: #f17425;
   border-radius: 5px;
@@ -458,20 +458,20 @@ button{
   transform: rotate(38deg);
 }
 .triangle-topleft {
-  border-top: 16px solid #f17425;
-  border-right: 16px solid transparent;
+  border-top: 14px solid #f17425;
+  border-right: 14px solid transparent;
   position: absolute;
-  right: 23%;
+  right: 20%;
   top: 0%;
-  transform: rotate(-7deg);
+  transform: rotate(-2deg);
 }
 .triangle-bottomright {
-  border-bottom: 16px solid #f17425;
-  border-left: 16px solid transparent;
+  border-bottom: 14px solid #f17425;
+  border-left: 14px solid transparent;
   position: absolute;
-  right: 0%;
-  top: 11%;
-  transform: rotate(-13deg);
+  right: 5%;
+  top: 12%;
+  transform: rotate(-16deg);
 }
 .list-rates h2{
   font-size: 30px;
